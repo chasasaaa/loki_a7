@@ -25,7 +25,7 @@ app.delete("/dosen/delete/referensi", function(req,res){
     res.send("Referensi berhasil dihapus");
 })
 
-
+//komponen penilaian
 app.post("/dosen/tambah/penilaian", function(req,res){
     res.send("Komponen penilaian berhasil ditambahkan");
 })
@@ -34,6 +34,17 @@ app.put("/dosen/update/penilaian", function(req,res){
 })
 app.delete("/dosen/delete/penilaian", function(req,res){
     res.send("Komponen penilaian dihapus");
+})
+
+//pertemuan mingguan RPS
+app.post("/dosen/tambah/pertemuan", function(req,res){
+    res.send("Pertemuan Mingguan RPS berhasil ditambahkan");
+})
+app.put("/dosen/update/pertemuan", function(req,res){
+    res.send("Pertemuan Mingguan RPS berhasil di update");
+})
+app.delete("/dosen/delete/pertemuan", function(req,res){
+    res.send("Pertemuan Mingguan RPS berhasil dihapus");
 })
 
 app.listen(3000,function(){
