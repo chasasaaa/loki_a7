@@ -1,0 +1,22 @@
+{
+  "name": "loki_a7",
+  "version": "1.0.0",
+  "description": "Repository Kelompok 7 Kelas Pemograman Web A",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ilham2011522019/loki_a7.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ilham2011522019/loki_a7/issues"
+  },
+  "homepage": "https://github.com/Ilham2011522019/loki_a7#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
