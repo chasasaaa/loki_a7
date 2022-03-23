@@ -30,13 +30,13 @@ app.post("/dosen/tambah/penilaian", function(req,res){
     res.send("Komponen penilaian berhasil ditambahkan");
 })
 app.put("/dosen/update/penilaian", function(req,res){
-    res.send("Komponen penilaian di update");
+    res.send("Komponen penilaian berhasil di update");
 })
 app.delete("/dosen/delete/penilaian", function(req,res){
-    res.send("Komponen penilaian dihapus");
+    res.send("Komponen penilaian berhasil dihapus");
 })
 
-//Pertemuan mingguan RPS
+//Pertemuan Mingguan RPS
 app.post("/dosen/tambah/pertemuan", function(req,res){
     res.send("Pertemuan Mingguan RPS berhasil ditambahkan");
 })
