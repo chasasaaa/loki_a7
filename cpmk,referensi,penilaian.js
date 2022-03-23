@@ -14,7 +14,7 @@ app.delete("/dosen/delete/cpmk", function(req,res){
     res.send("Capaian Pembelajaran Mata Kuliah berhasil dihapus");
 })
 
-//referensi
+//Referensi
 app.post("/dosen/tambah/referensi", function(req,res){
     res.send("Referensi berhasil ditambahkan");
 })
@@ -25,7 +25,7 @@ app.delete("/dosen/delete/referensi", function(req,res){
     res.send("Referensi berhasil dihapus");
 })
 
-//komponen penilaian
+//Komponen Penilaian
 app.post("/dosen/tambah/penilaian", function(req,res){
     res.send("Komponen penilaian berhasil ditambahkan");
 })
@@ -36,7 +36,7 @@ app.delete("/dosen/delete/penilaian", function(req,res){
     res.send("Komponen penilaian dihapus");
 })
 
-//pertemuan mingguan RPS
+//Pertemuan mingguan RPS
 app.post("/dosen/tambah/pertemuan", function(req,res){
     res.send("Pertemuan Mingguan RPS berhasil ditambahkan");
 })
