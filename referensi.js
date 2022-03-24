@@ -20,7 +20,7 @@ app.post("/dosen/tambah/referensi", function (req, res) {
             "pendukung": "Silberschartz, Korth and Sudarshan, Database System Concepts 6th Ed, Mc Graw Hill, 2011. " 
         }
     }
-    res.send(ref)
+    res.json(ref)
     res.send("Referensi berhasil di tambah")
 })
 
@@ -40,7 +40,7 @@ app.put("/dosen/update/referensi", function (req, res) {
             "pendukung": "Statistics for Engineering and The Sciences, Mendenhall, W., Sincich, T., Prentice Hall, New Jersey, 2015. ",  
         }
     }
-    res.send(ref)
+    res.json(ref)
     res.send("Referensi berhasil di update")
 })
 
@@ -60,7 +60,7 @@ app.delete("/dosen/hapus/referensi", function (req, res) {
             "pendukung": "1.	Turban, Efraim, David King, Jae Lee and Dennis Viehland. 2004. Electronic Commerce. A Managerial Perspective (Chapter 2). Prentice Hall ",
         }
     }
-    res.send(ref)
+    res.json(ref)
     res.send("Referensi berhasil di hapus")
 })
 
