@@ -1,10 +1,45 @@
 const express = require("express")
+const res = require("express/lib/response")
 
 const app = express()
 
-app.post("/login", function(req, resp){
+app.post("/beranda/login", function(req, resp){
+    let ref = {
+        "id": "12345",
+        "password": "qwert",
+        "code_error": 0
+    }   
+    res.send(ref) 
     resp.send("Halaman Login, Masukkan Username dan Password");
 })
-app.post("/logout", function(req, resp){
+app.post("/beranda/logout", function(req, resp){
+    let ref = {
+        "message": "berhasil logout",
+        "code_error": 0
+    }
+    res.send(ref)
     resp.send("Anda telah Logout");
+})
+app.put("/admin/pilih dosen/daftar dosen", function (req, res) {
+    let ref = {
+        "message": "dosen berhasil dipilih",
+        "code_error": 0,
+        "nama dosen": {
+            "NIDN": "0018018202",
+            "nama": "husnil kamil, MT",
+            "Fakultas": "Teknologi Informasi",
+            "Unit": "Sistem Informasi"
+        },
+        "nama dosen": {
+            "NIDN": "0015048907",
+            "nama": "Jefril Rahmadoni, S.Kom, M.Kom",
+            "Fakultas": "Teknologi Informasi",
+            "Unit": "Sistem Informasi"
+        },
+    }
+    res.send(ref)
+    res.send("Referensi berhasil di update")
+})
+app.listen(3000, function(){
+    console.log("Masuk ke halaman login")
 })
