@@ -44,3 +44,7 @@ app.get("eksportPDF", function(req, res){
     res.send(eksport)
     res.send("Berhasil Mengeksport RPS mata kuliah menjadi PDF");
 })
+
+app.listen(3000, function () {
+    console.log("Server jalan di port 3000")
+})
