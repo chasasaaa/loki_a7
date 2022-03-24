@@ -42,3 +42,7 @@ app.delete("/dosen/delete/pertemuan", function(req,res){
     res.send(pert)
     res.send("Pertemuan Mingguan RPS berhasil dihapus");
 })
+
+app.listen(3000, function () {
+    console.log("Server jalan di port 3000")
+})
