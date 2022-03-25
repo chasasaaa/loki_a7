@@ -33,7 +33,7 @@ app.get("/detailRPS", function(req, res){
     res.send(detail)
     res.send("Detail RPS berhasil ditampilkan")
 })
-app.get("eksportPDF", function(req, res){
+app.get("/eksportPDF", function(req, res){
     let eksport = {
         "message": "Export RPS to PDF",
         "code_error": 0,
