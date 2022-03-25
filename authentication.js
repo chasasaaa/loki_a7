@@ -24,13 +24,13 @@ app.put("/admin/pilih dosen/daftar dosen", function (req, res) {
     let ref = {
         "message": "dosen berhasil dipilih",
         "code_error": 0,
-        "nama dosen": {
+        "dosen 1": {
             "NIDN": "0018018202",
             "nama": "husnil kamil, MT",
             "Fakultas": "Teknologi Informasi",
             "Unit": "Sistem Informasi"
         },
-        "nama dosen": {
+        "dosen 2": {
             "NIDN": "0015048907",
             "nama": "Jefril Rahmadoni, S.Kom, M.Kom",
             "Fakultas": "Teknologi Informasi",
