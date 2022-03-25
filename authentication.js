@@ -38,7 +38,7 @@ app.put("/admin/pilih dosen/daftar dosen", function (req, res) {
         },
     }
     res.send(ref)
-    res.send("Referensi berhasil di update")
+    res.send("Dosen telah dipilih")
 })
 app.listen(3000, function(){
     console.log("Masuk ke halaman login")
