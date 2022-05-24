@@ -3,6 +3,8 @@ const express = require("express")
 const app = express()
 
 //Pertemuan Mingguan RPS
+
+//Tambah Pertemuan Mingguan
 app.post("/dosen/tambah/pertemuan", function(req,res){
     let pert = {
         "message": "Pertemuan Mingguan RPS berhasil ditambahkan",
@@ -16,6 +18,8 @@ app.post("/dosen/tambah/pertemuan", function(req,res){
     res.send(pert)
     res.send("Pertemuan Mingguan RPS berhasil ditambahkan");
 })
+
+//Update Pertemuan Mingguan
 app.put("/dosen/update/pertemuan", function(req,res){
     let pert = {
         "message": "Pertemuan Mingguan RPS berhasil di update",
@@ -29,6 +33,8 @@ app.put("/dosen/update/pertemuan", function(req,res){
     res.send(pert)
     res.send("Pertemuan Mingguan RPS berhasil di update");
 })
+
+//Delete Pertemuan Mingguan
 app.delete("/dosen/delete/pertemuan", function(req,res){
     let pert = {
         "message": "Pertemuan Mingguan RPS berhasil dihapus",
