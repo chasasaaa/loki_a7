@@ -2,6 +2,7 @@ const express = require("express")
 
 const app = express()
 
+//Cari matkul RPS
 app.get("/carimatkul", function(req, res){
     let cari = {
         "message": "Mata Kuliah yang dicari",
@@ -15,6 +16,7 @@ app.get("/carimatkul", function(req, res){
     res.send("Mata Kuliah yang dicari berhasil ditemukan")
 })
 
+//lihat detail RPS
 app.get("/detailRPS", function(req, res){
     let detail = {
         "message": "Detail RPS",
@@ -33,6 +35,8 @@ app.get("/detailRPS", function(req, res){
     res.send(detail)
     res.send("Detail RPS berhasil ditampilkan")
 })
+
+//eksport RPS to PDF
 app.get("/eksportPDF", function(req, res){
     let eksport = {
         "message": "Export RPS to PDF",
