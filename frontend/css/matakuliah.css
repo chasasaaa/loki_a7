@@ -8311,3 +8311,10 @@
     color: #000;
     text-align: center;
   }
+  
+  .table-detail-referensi {
+      background-color: #fff;
+      border: #000;
+      color: #000;
+      text-align: justify;
+  }
