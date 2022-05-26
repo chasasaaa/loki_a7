@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/matakuliah.css">
+  <link rel="stylesheet" href="css/popup.css">
   </head>
   <body>
 		
@@ -72,28 +73,35 @@
                 Dosen Pengampu : Ricky Akbar, M. Kom.<br>
                 Jumlah SKS     : 3<br>
             </h3>
-            <table border ="1" cellpadding="10">
+            <table border ="1" cellpadding="10" width="90%">
                 <tr class="table-detail">
-                      <td><b> CPMK </b></td>
-                    <td><b> Aksi </b></td>
+                    <td><b> CPMK </b></td>
+                    <td width="100px"><b> Aksi </b></td>
                 </tr>
-                <tr class="table-detail">
+                <tr class="table-detail-cpmk">
                     <td>Mahasiswa mampu menjelaskan konsep visualisasi data</td>
-                    <td>
-                        <a rel="icon" href="login.html"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                        <a rel="icon" href="login.html"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                    <td class="table-detail">
+                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a rel="icon" href="#"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
                     </td>
                 </tr>
-                <tr class="table-detail">
+                <tr class="table-detail-cpmk">
                     <td>Mahasiswa mampu membuat visualisasi data menggunakan bahasa pemograman python</td>
-                    <td>
-                        <a rel="icon" href="login.html"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                        <a rel="icon" href="login.html"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                    <td class="table-detail">
+                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a rel="icon" href="#"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
                     </td>
               </tr>
             </table>
-            <button></button>
+
+            <div id="button"><a href="#popup">Simpan</a></div>
+            <div id="popup">
+            <div class="window">
+                <a href="#" class="close-button">Close</a>
+                <h2>Data Tersimpan</h2>
+            </div>
       </div>
+    </div>
 		</div>
 
     <script src="js/jquery.min.js"></script>
