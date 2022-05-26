@@ -81,30 +81,76 @@
                 <tr class="table-detail-cpmk">
                     <td>Mahasiswa mampu menjelaskan konsep visualisasi data</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                        <a rel="icon" href="#"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                        <a class="popupedit" rel="icon" href="#popupedit"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
                     </td>
                 </tr>
                 <tr class="table-detail-cpmk">
                     <td>Mahasiswa mampu membuat visualisasi data menggunakan bahasa pemograman python</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                        <a rel="icon" href="#"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                        <a class="popupedit" rel="icon" href="#popupedit"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
                     </td>
               </tr>
             </table>
             <td>
-              <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 85%;"></a>
+              <a class="popuptambah" rel="icon" href="#popuptambah"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 85%;"></a>
             </td>
-            <div id="button"><a href="#popup">Simpan</a></div>
-            <div id="popup">
+            <! -- pop up simpan -->
+            <div id="button"><a href="#popupsimpan">Simpan</a></div>
+            <div id="popupsimpan">
             <div class="window">
                 <a href="#" class="close-button">Close</a>
                 <h2>Data Tersimpan</h2>
             </div>
+            </div>
+
+            <! -- pop up edit -->
+            <div id="popupedit">
+              <div class="windowedit">
+                  <input class="input-edit" type="text" placeholder="Input">
+                  <a href="#popupsimpanedit" class="close-buttonedit">Update</a>
+                  <h2>Update Data</h2>
+              </div>
+            </div>
+            <div id="popupsimpanedit">
+              <div class="windowsimpanedit">
+                  <a href="#" class="close-button">Close</a>
+                  <h2>Data Berhasil di Update</h2>
+              </div>
+              </div>
+
+          <! -- pop up tambah -->
+            <div id="popuptambah">
+              <div class="windowtambah">
+                  <input class="input-tambah" type="text" placeholder="Input">
+                  <a href="#popupsimpantambah" class="close-buttontambah">Tambah</a>
+                  <h2>Tambah Data</h2>
+              </div>
+            </div>
+            <div id="popupsimpantambah">
+              <div class="windowsimpantambah">
+                  <a href="#" class="close-button">Close</a>
+                  <h2>Data Berhasil di Tambah</h2>
+              </div>
+              </div>
+
+          <! -- pop up hapus -->
+            <div id="popuphapus">
+              <div class="windowhapus">
+                  <a href="#popupsimpanhapus" class="close-buttoniya">Iya</a>
+                  <a href="#" class="close-buttontidak">Tidak</a>
+                  <h2>Hapus CPMK</h2>
+              </div>
+            </div>
+            <div id="popupsimpanhapus">
+              <div class="windowsimpanhapus">
+                  <a href="#" class="close-button">Close</a>
+                  <h2>Data Berhasil di Hapus</h2>
+              </div>
+              </div>
       </div>
     </div>
-		</div>
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
