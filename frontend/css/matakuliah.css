@@ -8311,18 +8311,28 @@
     color: #000;
     text-align: center;
   }
-<<<<<<< HEAD
-  
-  .table-detail-referensi {
-      background-color: #fff;
-      border: #000;
-      color: #000;
-      text-align: justify;
-=======
+
   .table-detail-cpmk {
     background-color: #fff;
     border: #000;
     color: #000;
     text-align: justify;
->>>>>>> 888fbfd7e48d44b5eca6a1b4ad33157a30f756d9
+  }
+  .table-detail-referensi {
+    background-color: #fff;
+    border: #000;
+    color: #000;
+    text-align: justify;
+  }
+  .table-detail-penilaian {
+    background-color: #fff;
+    border: #000;
+    color: #000;
+    text-align: justify;
+  }
+  .table-detail-pertemuanmingguan {
+    background-color: #fff;
+    border: #000;
+    color: #000;
+    text-align: justify;
   }
