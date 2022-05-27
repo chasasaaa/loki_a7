@@ -81,7 +81,7 @@
                 <tr class="table-detail-referensi">
                     <td>Utama :</td>
                     <td rowspan="2" class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupupdate1" rel="icon" href="#popupupdate1"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
                     </td>
                 </tr>
                 <tr class="table-detail-referensi">
@@ -90,7 +90,7 @@
                 <tr class="table-detail-referensi">
                     <td>Pendukung :</td>
                     <td rowspan="2" class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupupdate2" rel="icon" href="#popupupdate2"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
                     </td>
                 </tr>
                 <tr class="table-detail-referensi">
@@ -98,8 +98,8 @@
                 </tr>
             </table>
             <td>
-                <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 79%;"></a>
-                <a class="popuphapus rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:40px;height:40px;margin-top: -6.5%;margin-left: 85%;"></a>
+                <a class="popuptambahref" rel="icon" href="#popuptambahref"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 79%;"></a>
+                <a class="popuphapus# rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:40px;height:40px;margin-top: -6.5%;margin-left: 85%;"></a>
             </td>
             <! -- pop up simpan -->
             <div id="button"><a href="#popupsimpan">Simpan</a></div>   
@@ -123,6 +123,51 @@
                     <h2>Data Berhasil di Hapus</h2>
                 </div>
                 </div>
+
+                <! -- pop up update -->
+                <div id="popupupdate1">
+                  <div class="windowupdate1">
+                      <input class="input-update1" type="text" placeholder="Referensi utama">
+                      <a href="#popupsimpanupdate" class="close-buttonupdate">Update</a>
+                      <h2>Update Referensi</h2>
+                  </div>
+                </div>
+                <div id="popupsimpanupdate">
+                  <div class="windowsimpanupdate">
+                      <a href="#" class="close-button">Close</a>
+                      <h2>Data Berhasil di Update</h2>
+                  </div>
+                  </div>
+                  <! -- pop up update -->
+                  <div id="popupupdate2">
+                    <div class="windowupdate2">
+                        <input class="input-update2" type="text" placeholder="Referensi pendukung">
+                        <a href="#popupsimpanupdate" class="close-buttonupdate">Update</a>
+                        <h2>Update Referensi</h2>
+                    </div>
+                  </div>
+                  <div id="popupsimpanupdate">
+                    <div class="windowsimpanupdate">
+                        <a href="#" class="close-button">Close</a>
+                        <h2>Data Berhasil di Update</h2>
+                    </div>
+                    </div>
+
+                    <! -- pop up tambah -->
+                    <div id="popuptambahref">
+                      <div class="windowtambahref">
+                          <input class="input-tambah1" type="text" placeholder="Referensi utama">
+                          <input class="input-tambah2" type="text" placeholder="Referensi pendukung">
+                          <a href="#popupsimpantambahref" class="close-buttontambahref">Update</a>
+                          <h2>Tambah Referensi</h2>
+                      </div>
+                    </div>
+                    <div id="popupsimpantambahref">
+                      <div class="windowsimpantambahref">
+                          <a href="#" class="close-button">Close</a>
+                          <h2>Data Berhasil di Tambah</h2>
+                      </div>
+                      </div>
       </div>
 		</div>
 

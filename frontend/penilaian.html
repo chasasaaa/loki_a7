@@ -85,7 +85,7 @@
                     <td>Kehadiran</td>
                     <td>15%</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupeditnilai" rel="icon" href="#popupeditnilai"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
                         <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height: 35px;"></a>
                     </td>
                 </tr>
@@ -94,7 +94,7 @@
                     <td>Tugas</td>
                     <td>20%</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupeditnilai" rel="icon" href="#popupeditnilai"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
                         <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height: 35px;"></a>
                     </td>
                 </tr>
@@ -103,7 +103,7 @@
                     <td>UTS</td>
                     <td>30%</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupeditnilai" rel="icon" href="#popupeditnilai"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
                         <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height: 35px;"></a>
                     </td>
                 </tr>
@@ -112,13 +112,13 @@
                     <td>UAS</td>
                     <td>35%</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupeditnilai" rel="icon" href="#popupeditnilai"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
                         <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height: 35px;"></a>
                     </td>
                 </tr>
             </table>
             <td>
-                <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 85%;"></a>
+                <a class="popupaddnilai" rel="icon" href="#popupaddnilai"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 85%;"></a>
             </td>
             <div id="button"><a href="#popupsimpan">Simpan</a></div>
             <div id="popupsimpan">
@@ -140,7 +140,39 @@
                     <a href="#" class="close-button">Close</a>
                     <h2>Data Berhasil di Hapus</h2>
                 </div>
-                </div>  
+                </div>
+              
+                <! -- pop up edit -->
+                <div id="popupeditnilai">
+                  <div class="windoweditnilai">
+                      <input class="input-nilai" type="text" placeholder="Penilaian">
+                      <input class="input-bobot" type="text" placeholder="Bobot">
+                      <a href="#popupsimpaneditnilai" class="close-buttoneditnilai">Update</a>
+                      <h2>Edit Penilaian</h2>
+                  </div>
+                </div>
+                <div id="popupsimpaneditnilai">
+                  <div class="windowsimpaneditnilai">
+                      <a href="#" class="close-button">Close</a>
+                      <h2>Data Berhasil di Rubah</h2>
+                  </div>
+                  </div>
+
+                  <! -- pop up tambah -->
+                  <div id="popupaddnilai">
+                    <div class="windowaddnilai">
+                        <input class="input-nilai" type="text" placeholder="Penilaian">
+                        <input class="input-bobot" type="text" placeholder="Bobot">
+                        <a href="#popupsimpanadd" class="close-buttonadd">Update</a>
+                        <h2>Tambah Penilaian</h2>
+                    </div>
+                  </div>
+                  <div id="popupsimpanadd">
+                    <div class="windowsimpanadd">
+                        <a href="#" class="close-button">Close</a>
+                        <h2>Data Berhasil di Tambah</h2>
+                    </div>
+                    </div>
       </div>
 		</div>
 

@@ -90,9 +90,8 @@
                     <td class="table-detail"> 14</td>
                     <td class="table-detail"> 1</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupper" rel="icon" href="#popupper"><img src="images/icon-edit.jpg" style="width:30px;height: 30px;"></a>
                         <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height: 35px;"></a>
-                        <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;"></a>
                     </td>
                 </tr>
                 <tr class="table-detail-pertemuanmingguan">
@@ -103,12 +102,14 @@
                     <td class="table-detail"> 14</td>
                     <td class="table-detail"> 0</td>
                     <td class="table-detail">
-                        <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popupper" rel="icon" href="#popupper"><img src="images/icon-edit.jpg" style="width:30px;height: 30px;"></a>
                         <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height: 35px;"></a>
-                        <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;"></a>
                     </td>
                 </tr>
             </table>
+            <td>
+              <a class="popuptambahper" rel="icon" href="#popuptambahper"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 85%;"></a>
+            </td>
             
             <div id="button"><a href="#popupsimpan">Simpan</a></div>
             <div id="popupsimpan">
@@ -131,6 +132,38 @@
                     <h2>Data Berhasil di Hapus</h2>
                 </div>
                 </div>
+
+                <! -- pop up tambah -->
+                <div id="popuptambahper">
+                  <div class="windowtambahper">
+                      <input class="input-nilai" type="text" placeholder="Kode Matkul">
+                      <input class="input-bobot" type="text" placeholder="Jumlah Pertemuan">
+                      <a href="#popupsimpanper" class="close-buttonper">Update</a>
+                      <h2>Tambah Penilaian</h2>
+                  </div>
+                </div>
+                <div id="popupsimpanper">
+                  <div class="windowsimpanper">
+                      <a href="#" class="close-button">Close</a>
+                      <h2>Data Berhasil di Tambah</h2>
+                  </div>
+                  </div>
+
+                  <! -- pop up update -->
+                  <div id="popupper">
+                    <div class="windowper">
+                        <input class="input-nilai" type="text" placeholder="Kode Matkul">
+                        <input class="input-bobot" type="text" placeholder="Jumlah Pertemuan">
+                        <a href="#popupsimpaneditp" class="close-buttoneditp">Update</a>
+                        <h2>Edit Penilaian</h2>
+                    </div>
+                  </div>
+                  <div id="popupsimpaneditp">
+                    <div class="windowsimpaneditp">
+                        <a href="#" class="close-button">Close</a>
+                        <h2>Data Berhasil di Rubah</h2>
+                    </div>
+                    </div>
       </div>
 		</div>
 

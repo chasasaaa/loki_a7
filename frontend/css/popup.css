@@ -278,3 +278,517 @@ body {font-family: Arial, Helvetica, sans-serif;}
 #popuphapus:target {
 	visibility: visible;
 }
+
+/*pop up update referensi*/
+#popupupdate1 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowupdate1 {
+	width: 600px;
+	height: 200px;
+	background: #83BD75;
+	border-radius: 10px;
+	position:relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+.input-update1 {
+	width: 80%;
+	height: 22%;
+	position: absolute ;
+	top: 85px;
+	right: 59px;
+}
+.close-buttonupdate {
+	width: 25%;
+	height: 13%;
+	line-height: 22px;
+	background: #c1d5b4;
+	border-radius: 5%;
+	border: 2px solid black;
+	display: block;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 165px;
+	right: 225px;	
+}
+#popupupdate1:target {
+	visibility: visible;
+}
+
+/*pop up update referensi*/
+#popupupdate2 {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowupdate2 {
+	width: 600px;
+	height: 200px;
+	background: #83BD75;
+	border-radius: 10px;
+	position:relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+.input-update2 {
+	width: 80%;
+	height: 22%;
+	position: absolute ;
+	top: 85px;
+	right: 59px;
+}
+.close-buttonupdate {
+	width: 25%;
+	height: 13%;
+	line-height: 22px;
+	background: #c1d5b4;
+	border-radius: 5%;
+	border: 2px solid black;
+	display: block;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 165px;
+	right: 225px;	
+}
+#popupupdate2:target {
+	visibility: visible;
+}
+
+/* Pop Up simpan update*/
+#popupsimpanupdate {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowsimpanupdate {
+	width: 510px;
+	height: 100px;
+	background: #83BD75;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+#popupsimpanupdate:target {
+	visibility: visible;
+}
+
+/*pop up tambah referensi*/
+#popuptambahref {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowtambahref {
+	width: 600px;
+	height: 275px;
+	background: #83BD75;
+	border-radius: 10px;
+	position:relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+.input-tambah1 {
+	width: 80%;
+	height: 22%;
+	position: absolute ;
+	top: 85px;
+	right: 59px;
+}
+.input-tambah2 {
+	width: 80%;
+	height: 22%;
+	position: absolute ;
+	top: 160px;
+	right: 59px;
+}
+.close-buttontambahref {
+	width: 25%;
+	height: 10%;
+	line-height: 22px;
+	background: #c1d5b4;
+	border-radius: 5%;
+	border: 2px solid black;
+	display: block;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 235px;
+	right: 225px;	
+}
+#popuptambahref:target {
+	visibility: visible;
+}
+
+/* Pop Up simpan tambah*/
+#popupsimpantambahref {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowsimpantambahref {
+	width: 510px;
+	height: 100px;
+	background: #83BD75;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+#popupsimpantambahref:target {
+	visibility: visible;
+}
+
+/*pop up edit nilai*/
+#popupeditnilai {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windoweditnilai {
+	width: 600px;
+	height: 235px;
+	background: #83BD75;
+	border-radius: 10px;
+	position:relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+.input-nilai {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 80px;
+	right: 59px;
+}
+.input-bobot {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 130px;
+	right: 59px;
+}
+.close-buttoneditnilai {
+	width: 25%;
+	height: 10%;
+	line-height: 22px;
+	background: #c1d5b4;
+	border-radius: 5%;
+	border: 2px solid black;
+	display: block;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 200px;
+	right: 225px;	
+}
+#popupeditnilai:target {
+	visibility: visible;
+}
+
+/* Pop Up simpan edit*/
+#popupsimpaneditnilai {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowsimpaneditnilai {
+	width: 510px;
+	height: 100px;
+	background: #83BD75;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+#popupsimpaneditnilai:target {
+	visibility: visible;
+}
+
+/*pop up tambah nilai*/
+#popupaddnilai {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowaddnilai{
+	width: 600px;
+	height: 235px;
+	background: #83BD75;
+	border-radius: 10px;
+	position:relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+.input-nilai {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 80px;
+	right: 59px;
+}
+.input-bobot {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 130px;
+	right: 59px;
+}
+.close-buttonadd {
+	width: 25%;
+	height: 10%;
+	line-height: 22px;
+	background: #c1d5b4;
+	border-radius: 5%;
+	border: 2px solid black;
+	display: block;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 200px;
+	right: 225px;	
+}
+#popupaddnilai:target {
+	visibility: visible;
+}
+
+/* Pop Up simpan edit*/
+#popupsimpanadd {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowsimpanadd {
+	width: 510px;
+	height: 100px;
+	background: #83BD75;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+#popupsimpanadd:target {
+	visibility: visible;
+}
+
+/*pop up tambah pertemuan*/
+#popuptambahper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowtambahper{
+	width: 600px;
+	height: 235px;
+	background: #83BD75;
+	border-radius: 10px;
+	position:relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+.input-nilai {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 80px;
+	right: 59px;
+}
+.input-bobot {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 130px;
+	right: 59px;
+}
+.close-buttonper {
+	width: 25%;
+	height: 10%;
+	line-height: 22px;
+	background: #c1d5b4;
+	border-radius: 5%;
+	border: 2px solid black;
+	display: block;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 200px;
+	right: 225px;	
+}
+#popuptambahper:target {
+	visibility: visible;
+}
+
+/* Pop Up simpan pertemuan*/
+#popupsimpanper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowsimpanper {
+	width: 510px;
+	height: 100px;
+	background: #83BD75;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+#popupsimpanper:target {
+	visibility: visible;
+}
+
+/*pop up tambah pertemuan*/
+#popupper {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowper{
+	width: 600px;
+	height: 235px;
+	background: #83BD75;
+	border-radius: 10px;
+	position:relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+.input-nilai {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 80px;
+	right: 59px;
+}
+.input-bobot {
+	width: 80%;
+	height: 18%;
+	position: absolute ;
+	top: 130px;
+	right: 59px;
+}
+.close-buttoneditp {
+	width: 25%;
+	height: 10%;
+	line-height: 22px;
+	background: #c1d5b4;
+	border-radius: 5%;
+	border: 2px solid black;
+	display: block;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 200px;
+	right: 225px;	
+}
+#popupper:target {
+	visibility: visible;
+}
+
+/* Pop Up simpan pertemuan*/
+#popupsimpaneditp {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: rgba(0,0,0,.7);
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	visibility: hidden;
+}
+.windowsimpaneditp {
+	width: 510px;
+	height: 100px;
+	background: #83BD75;
+	border-radius: 10px;
+	position: relative;
+	padding: 10px;
+	text-align: center;
+	margin: 15% auto;
+}
+#popupsimpaneditp:target {
+	visibility: visible;
+}
