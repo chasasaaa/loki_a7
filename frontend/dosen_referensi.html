@@ -76,13 +76,15 @@
             <table border ="1" cellpadding="10" width="90%">
                 <tr class="table-detail">
                       <td width="650px"><b> Referensi </b></td>
-                    <td width="100px"><b> Aksi </b></td>
+                    <td width="150px"><b> Aksi </b></td>
                 </tr>
                 <tr class="table-detail-referensi">
                     <td>Utama :</td>
                     <td rowspan="2" class="table-detail">
                         <a class="popupupdate1" rel="icon" href="#popupupdate1"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                    </td>
+                        <a class="popuptambahref1" rel="icon" href="#popuptambahref1"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:40px;height:40px;"></a>
+                      </td>
                 </tr>
                 <tr class="table-detail-referensi">
                     <td>1. Tufte, Edward (1983). The Visual Display of Quantitative Information. Cheshire, Connecticut: Graphics Press. ISBN 0961392142.</td>
@@ -91,16 +93,14 @@
                     <td>Pendukung :</td>
                     <td rowspan="2" class="table-detail">
                         <a class="popupupdate2" rel="icon" href="#popupupdate2"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                    </td>
+                        <a class="popuptambahref2" rel="icon" href="#popuptambahref2"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;"></a>
+                        <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:40px;height:40px;"></a>
+                      </td>
                 </tr>
                 <tr class="table-detail-referensi">
                     <td>2. Vitaly Friedman (2008) "Data Visualization and Infographics" in: Graphics, Monday Inspiration, January 14th, 2008</td>
                 </tr>
             </table>
-            <td>
-                <a class="popuptambahref" rel="icon" href="#popuptambahref"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 79%;"></a>
-                <a class="popuphapus# rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:40px;height:40px;margin-top: -6.5%;margin-left: 85%;"></a>
-            </td>
             <! -- pop up simpan -->
             <div id="button"><a href="#popupsimpan">Simpan</a></div>   
             <div id="popupsimpan">
@@ -154,20 +154,34 @@
                     </div>
 
                     <! -- pop up tambah -->
-                    <div id="popuptambahref">
-                      <div class="windowtambahref">
+                    <div id="popuptambahref1">
+                      <div class="windowtambahref1">
                           <input class="input-tambah1" type="text" placeholder="Referensi utama">
-                          <input class="input-tambah2" type="text" placeholder="Referensi pendukung">
-                          <a href="#popupsimpantambahref" class="close-buttontambahref">Update</a>
+                          <a href="#popupsimpantambahref1" class="close-buttontambahref1">Update</a>
                           <h2>Tambah Referensi</h2>
                       </div>
                     </div>
-                    <div id="popupsimpantambahref">
-                      <div class="windowsimpantambahref">
+                    <div id="popupsimpantambahref1">
+                      <div class="windowsimpantambahref1">
                           <a href="#" class="close-button">Close</a>
                           <h2>Data Berhasil di Tambah</h2>
                       </div>
                       </div>
+
+                      <! -- pop up tambah -->
+                      <div id="popuptambahref2">
+                        <div class="windowtambahref2">
+                            <input class="input-tambah2" type="text" placeholder="Referensi pendukung">
+                            <a href="#popupsimpantambahref2" class="close-buttontambahref2">Update</a>
+                            <h2>Tambah Referensi</h2>
+                        </div>
+                      </div>
+                      <div id="popupsimpantambahref2">
+                        <div class="windowsimpantambahref2">
+                            <a href="#" class="close-button">Close</a>
+                            <h2>Data Berhasil di Tambah</h2>
+                        </div>
+                        </div>
       </div>
 		</div>
 
