@@ -8300,3 +8300,7 @@ a[data-toggle="collapse"] {
   color: #000;
   text-align: center;
 }
+
+.persentase {
+  font-size: 150%;
+}
