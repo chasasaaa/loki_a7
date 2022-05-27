@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Dashboard Dosen</title>
+  	<title>Mata Kuliah</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/matakuliah.css">
+    
   </head>
   <body>
 		
@@ -19,10 +21,10 @@
           <h6 style="margin-left: 100px; margin-top: -1cm;">Dosen</h6>
 	        <ul class="list-unstyled components mb-5">
             <li>
-              <a rel="icon" href="dosendashbord.html"><img src="images/icon-home.jpg" style="width:30px;height:30px;">Dashboard</a>
+              <a rel="icon" href="dosen_dashbord.html"><img src="images/icon-home.jpg" style="width:30px;height:30px;">Dashboard</a>
             </li>
             <li>
-              <a rel="icon" href="matakuliah.html"><img src="images/icon_course.jpg" style="width:30px;height:30px;">Mata Kuliah</a>
+              <a rel="icon" href="dosen_matakuliah.html"><img src="images/icon_course.jpg" style="width:30px;height:30px;">Mata Kuliah</a>
             </li>
 	          <li>
               <a rel="icon" href="login2.html"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
@@ -47,9 +49,43 @@
             </button>
           </div>
         </nav>
-        <nav class="mb4">
-          <h3 class="mb-7"><a href="matakuliah.html">MATA KULIAH</a></h3>
-        </nav>
+        <h2 class="mb-6">
+            Mata Kuliah
+        </h2>
+        <h3 class="mb-4">
+          Nama Dosen : xxx<br>
+          NIP        : xxx<br>
+          Semester   : xxx<br>
+        </h3>
+        <table class="table" border = "1" cellpadding="10">
+          <tr class="table-detail">
+                <td><b> No </b></td>
+              <td><b> Kode Matkul </b></td>
+              <td><b> Kuliah </b></td>
+              <td><b> Mata Kuliah </b></td>
+              <td><b> Detail </b></td>
+          </tr>
+          <tr class="table-detail">
+              <td>1</td>
+              <td>JSI62121</td>
+              <td>Analisis dan Visualisasi Data</td>
+              <td>3</td>
+              <td>
+                <a href="dosen_cpmk.html"><img src="https://icon-library.com/images/icon-detail/icon-detail-1.jpg"
+                style="width:30px;height:30px;"></a>
+              </td>
+          </tr>
+          <tr class="table-detail">
+            <td>2</td>
+            <td>JSI62125</td>
+            <td>Pemograman Web</td>
+            <td>3</td>
+            <td>
+              <img src="https://icon-library.com/images/icon-detail/icon-detail-1.jpg"
+              style="width:30px;height:30px;">
+            </td>
+        </tr>
+      </table>
       </div>
 		</div>
 
