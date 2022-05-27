@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/popup.css">
   </head>
   <body>
 		
@@ -25,12 +26,13 @@
               <a rel="icon" href="dosen_matakuliah.html"><img src="images/icon_course.jpg" style="width:30px;height:30px;">Mata Kuliah</a>
             </li>
 	          <li>
-              <a rel="icon" href="login2.html"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
+              <a class="popuplogout" rel="icon" href="#popuplogout"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
 	          </li>
 	        </ul>
 
 	       
     	</nav>
+      
 
         <!-- Page Content  -->
       <div id="content" class="p-4 p-md-5">
@@ -50,6 +52,14 @@
         <nav class="mb4">
           <h3 class="mb-7"><a href="dosen_matakuliah.html">MATA KULIAH</a></h3>
         </nav>
+      </div>
+      <! -- pop up Logout -->
+      <div id="popuplogout">
+      <div class="windowlogout">
+        <a href="login2.html" class="close-buttonoutiya">Iya</a>
+        <a href="#" class="close-buttonouttidak">Tidak</a>
+          <h2>LOG OUT</h2>
+      </div>
       </div>
 		</div>
 
