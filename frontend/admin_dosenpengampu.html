@@ -10,6 +10,7 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
@@ -30,7 +31,7 @@
             <a rel="icon" href="admin_laporanrps.html"><img src="images/icon-laporan.jpg" style="width:25px;height:30px;">Laporan RPS</a>
           </li>
           <li>
-            <a rel="icon" href="login2.html"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
+            <a class="popuplogout" rel="icon" href="#popuplogout"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
           </li>
         </ul>
 
@@ -52,23 +53,6 @@
             aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
 
@@ -109,9 +93,9 @@
                   
                 </td>
                   <td class="table-detail">
-                      <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:25px;height:25px;"></a>
-                      <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                      <a rel="icon" href="#"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                      <a class="popupadddosen" rel="icon" href="#popupadddosen"><img src="images/icon-tambah.jpg" style="width:25px;height:25px;"></a>
+                      <a class="popupdosenup" rel="icon" href="#popupdosenup"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                      <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
                   </td>
             </tr>
             <tr>
@@ -135,9 +119,9 @@
               </td>
 
               <td class="table-detail">
-                <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:25px;height:25px;"></a>
-                <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                <a rel="icon" href="#"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                <a class="popupadddosen" rel="icon" href="#popupadddosen"><img src="images/icon-tambah.jpg" style="width:25px;height:25px;"></a>
+                <a class="popupdosenup" rel="icon" href="#popupdosenup"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
             </td>
             
             </tr>
@@ -161,15 +145,77 @@
               </td>
 
               <td class="table-detail">
-                <a rel="icon" href="#"><img src="images/icon-tambah.jpg" style="width:25px;height:25px;"></a>
-                <a rel="icon" href="#"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                <a rel="icon" href="#"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                <a class="popupadddosen" rel="icon" href="#popupadddosen"><img src="images/icon-tambah.jpg" style="width:25px;height:25px;"></a>
+                <a class="popupdosenup" rel="icon" href="#popupdosenup"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
             </td>
 
             </tr>
           </tbody>
         </table>
       </div>
+      <! -- pop up simpan -->
+            <div id="button"><a href="#popupsimpan">Simpan</a></div>
+            <div id="popupsimpan">
+            <div class="window">
+                <a href="#" class="close-button">Close</a>
+                <h2>Data Tersimpan</h2>
+            </div>
+            </div>
+
+      <! -- pop up tambah dosen -->
+      <div id="popupadddosen">
+        <div class="windowadd">
+            <input class="input-tambahdosen" type="text" placeholder="Masukkan NIP">
+            <a href="#popupsimpanadd" class="close-buttonadddosen">Tambah</a>
+            <h2>Tambah Dosen</h2>
+        </div>
+      </div>
+      <div id="popupsimpanadd">
+        <div class="windowsimpanadd">
+            <a href="#" class="close-button">Close</a>
+            <h2>Data Berhasil di Tambah</h2>
+        </div>
+        </div>
+
+        <! -- pop up update dosen -->
+      <div id="popupdosenup">
+        <div class="windowdosenup">
+            <input class="input-dosenup" type="text" placeholder="Masukkan NIP">
+            <a href="#popupdosenupdate" class="close-buttonupdosen">Update</a>
+            <h2>Update Data Dosen</h2>
+        </div>
+      </div>
+      <div id="popupdosenupdate">
+        <div class="windowsimpanup">
+            <a href="#" class="close-button">Close</a>
+            <h2>Data Berhasil di Update</h2>
+        </div>
+        </div>
+
+        <! -- pop up hapus dosen -->
+        <div id="popuphapus">
+          <div class="windowhapus">
+              <a href="#popupsimpanhapus" class="close-buttoniya">Iya</a>
+              <a href="#" class="close-buttontidak">Tidak</a>
+              <h2>Hapus Dosen</h2>
+          </div>
+        </div>
+        <div id="popupsimpanhapus">
+          <div class="windowsimpanhapus">
+              <a href="#" class="close-button">Close</a>
+              <h2>Dosen Berhasil di Hapus</h2>
+          </div>
+          </div>
+
+          <! -- pop up Logout -->
+          <div id="popuplogout">
+          <div class="windowlogout">
+            <a href="login2.html" class="close-buttonoutiya">Iya</a>
+            <a href="#" class="close-buttonouttidak">Tidak</a>
+              <h2>LOG OUT</h2>
+          </div>
+          </div>
     </div>
 
   </div>
