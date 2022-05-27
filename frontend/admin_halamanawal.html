@@ -9,6 +9,7 @@
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popup.css">
   </head>
   <body>
 		
@@ -28,7 +29,7 @@
               <a rel="icon" href="admin_laporanrps.html"><img src="images/icon-laporan.jpg" style="width:25px;height:30px;">Laporan RPS</a>
 	          </li>
 	          <li>
-              <a rel="icon" href="login2.html"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
+              <a class="popuplogout" rel="icon" href="#popuplogout"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
 	          </li>
 	        </ul>
 
@@ -48,23 +49,6 @@
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">CPL CPMK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">List RPS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Persentase Metode</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Cetak</a>
-                </li>
-              </ul>
-            </div>
           </div>
         </nav>
 
@@ -73,6 +57,14 @@
           <h3 class="mb-7"><a href="admin_laporanrps.html">LAPORAN RPS</a></h3>
         </nav>
       
+        <! -- pop up Logout -->
+        <div id="popuplogout">
+        <div class="windowlogout">
+          <a href="login2.html" class="close-buttonoutiya">Iya</a>
+          <a href="#" class="close-buttonouttidak">Tidak</a>
+            <h2>LOG OUT</h2>
+        </div>
+        </div>
       </div>
 		</div>
 
