@@ -8286,3 +8286,10 @@ a[data-toggle="collapse"] {
 
 .footer p {
   color: rgba(255, 255, 255, 0.5); }
+
+.table-detail {
+  background-color: #fff;
+  border: #000;
+  color: #000;
+  text-align: center;
+  }
