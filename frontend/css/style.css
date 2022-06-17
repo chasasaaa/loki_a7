@@ -58,6 +58,15 @@ body {
   color: #285829;
   text-align: left;
   background-color: #fff; }
+  h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+  }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -1590,7 +1599,9 @@ pre {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -8160,13 +8171,16 @@ button {
     outline: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
-
+.btn-form .btn-group{
+  width: 50px;
+}
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
   font-family: "Poppins", Arial, sans-serif;
-  color: #000; }
+  color: #000; 
+margin-top: 5%;}
 
 .ftco-section {
   padding: 7em 0; }
