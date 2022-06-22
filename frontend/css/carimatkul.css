@@ -36,17 +36,24 @@ body{
   }
   
   #myTable tr {
-    border-bottom: 0.5px solid #171616;
+    border-bottom: 0.5pax solid #171616;
   }
   
   #myTable tr.header, #myTable tr:hover {
     background-color: #86aa5c;
-    
+    color: #171616;
   }
-  h2{
+  h3{
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       text-align: center;
+      margin-top: 20px;
   }
   .container-fluid{
-    border-radius: 15x;
+    border-radius: 15px;
   }
+
+  td{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #171616;
+}
