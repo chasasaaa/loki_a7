@@ -11,7 +11,7 @@ controllers.getAllUser = async (req, res) => {
 
 controllers.register = async(req, res) => {
     const {nama, email, password, confPassword } = req.body;
-    if(password !== confPassword) return res.status(400).json({msg: "Password dan Konfirmasi Password tidak sesuai"});
+    if(password !== confPassword) return res.status(400).json({msg: "Password dan Confirm Password tidak sesuai"});
     const salt = await bcrypt.genSalt();
     const hashPassword = await bcrypt.hash(password, salt);
     try {
