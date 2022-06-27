@@ -42,7 +42,7 @@ export const Login = async(req, res) => {
         const name = User[0].name;
         const email = User[0].email;
         const accessToken = jwt.sign({userId, name, email}, process.env.ACCESS_TOKEN_SECRET,{
-            expiredIn: '20s'
+            expiredIn: '30s'
         });
         const refreshToken = jwt.sign({userId, name, email}, process.env.REFRESH_TOKEN_SECRET,{
             expiredIn: '1d'
@@ -58,6 +58,6 @@ export const Login = async(req, res) => {
         })
         res.json({ accessToken});
     } catch (error) {
-        res.status(404).json({msg:'Email tidak ditemukan'});
+        res.status(404).json({msg:'Email tidak dapat ditemukan'});
     }
 }
