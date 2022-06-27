@@ -1,0 +1,13 @@
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email" : "198201182008121002@unand.ac.id",
+    "password": "12345"
+}
