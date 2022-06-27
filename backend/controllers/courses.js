@@ -32,7 +32,7 @@ controllers.tambahMatkul = async (req, res) => {
                 semester        : semester,
                 description     : description
         })
-        res.json({msg: "Berhasil menambahkan Mata Kuliah"});
+        res.json({msg: "Telah berhasil menambahkan Mata Kuliah"});
     }catch (err) {
         console.log(err);
     }
