@@ -1,30 +1,25 @@
-const models = require('../models/index')
-const bcrypt = require('bcryptjs')
+import { Sequelize } from "sequelize";
+import db from "../config/koneksi.js";
 
-const controllers = {}
+const { DataTypes } = Sequelize;
 
-controllers.getAllUser = async (req, res) => {
-    const users = await models.user.findAll({})
-    res.status(200).send(users)
-}
+const user = db.define('users',{
+    id : {
+        type            : DataTypes.BIGINT,
+        allowNull       : false,
+        primaryKey      : true,
+        autoIncrement   : true
+    },
+    name            : Sequelize.STRING,
+    email           : Sequelize.STRING,
+    password        : Sequelize.STRING,
+    remember_token  : Sequelize.STRING,
+    type            : Sequelize.ENUM('M', 'D', 'T'),
+    // created_at :Sequelize.DATE,
+    // updated_at : Sequelize.DATE
+},{
+    freezeTableName : true,
+    timestamps      : false
+})
 
-
-controllers.register = async(req, res) => {
-    const {nama, email, password, confPassword } = req.body;
-    if(password !== confPassword) return res.status(400).json({msg: "Password dan Confirm Password tidak sesuai"});
-    const salt = await bcrypt.genSalt();
-    const hashPassword = await bcrypt.hash(password, salt);
-    try {
-        await models.user.create({
-            name: nama,
-            type : 'D',
-            email: email,
-            password: hashPassword,
-        });
-        res.json({msg: "Register Telah Berhasil"});
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-module.exports = controllers
+export default user;
