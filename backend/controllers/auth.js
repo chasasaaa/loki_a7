@@ -50,7 +50,7 @@ const controllers = {}
 // }
 
 controllers.login = async (req, res) => {
-    res.render("mainlogin")
+    res.render("main_login")
 }
 
 controllers.loginAdmin = async (req, res) => {

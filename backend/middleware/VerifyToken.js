@@ -25,7 +25,7 @@ const verifyToken = (req, res, next) => {
     const NIP = payload.NIP
     next()
     } catch (err) {
-        res.render("mainlogin")
+        res.render("main_login")
     }
 }
 

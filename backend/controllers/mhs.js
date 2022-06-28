@@ -4,7 +4,7 @@ const controllers = {}
 
 controllers.home = async(req, res) => {
     const RPS = await models.course_plans.findAll({})
-    res.render("landingpage", {RPS} )
+    res.render("beranda_awal", {RPS} )
 }
 
 controllers.detail = async(req, res) => {
@@ -13,7 +13,7 @@ controllers.detail = async(req, res) => {
             id : req.params.id
         }
     })
-    res.render("landingpage", {RPS} )
+    res.render("beranda_awal", {RPS} )
 }
 
 module.exports = controllers

@@ -38,7 +38,7 @@ controllers.tambahRPS = async (req, res) => {
             semester        : req.body.semester,
             description     : req.body.description
         })
-        res.status(200).redirect("/homeDosen")
+        res.status(200).redirect("/dasbordDosen")
     } catch (err) {
         console.log(err);
     }

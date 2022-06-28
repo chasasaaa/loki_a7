@@ -23,7 +23,7 @@
         <img src="https://lp3m.unand.ac.id/webpanel/todakimage/logo.png" alt="">
         <!-- <img src="https://id.images.search.yahoo.com/yhs/search;_ylt=AwrxguoFI45iQX4AMyT3RQx.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=logo+unand&type=fc_ADDA49F0A8D_s58_g_e_d021922_n9998_c24&param1=7&param2=eJwtjEsKgzAQQK8ySwUZJzFGg8foqoiLVFMbjEbUYunpO0J37735jH5om%2B52F0RKGtVm3cJujKkZrxFJYaRk6VnkteBXJlFLVFgRivpqo4sc%2BVfWvS3THL8%2BBJuXSJCcfhniucNygCCkBjho1cBHqxTsugZ3usfkj7wsKiw0JNPrmEMGwU8ORtdPMYX%2BtcXZ5YIEEipTCtQV7PZpN%2F8%2F%2BwGW%2FDuH&hsimp=yhs-2461&hspart=fc&ei=UTF-8&fr=yhs-fc-2461#id=13&iurl=https%3A%2F%2Flp3m.unand.ac.id%2Fwebpanel%2Ftodakimage%2Flogo.png&action=click" alt=""> -->
     </div>
-    <a href="main_login.html" class="btn btn-success" style="margin-left: 31cm; margin-top: -100px;">Log In</a>
+    <a href="/main_login" class="btn btn-success" style="margin-left: 31cm; margin-top: -100px;">Log In</a>
     <div class="wrapper">
         <h1 style="margin-top: -30px;">SELAMAT DATANG DI RPS UNIVERSITAS ANDALAS</h1>
         <h5 style="margin-top: -10px; text-align: center;">Website Akademik Sistem Informasi Universitas Andalas</h5>
@@ -40,6 +40,7 @@
                     <button class="btn btn-success" type="submit">Cari</button>
                 </form>
                 <br>
+                <form action="/lihatRPS" method="GET">
                 <table class="table table-striped" id="listrps">
                     <thead>
                         <tr>
@@ -62,37 +63,9 @@
                                 <td><a href="" class="btn btn-secondary">Lihat</a></td>
                             </tr>
                             <% }) %>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>JSI62129</td>
-                                    <td>Pemograman Web</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td><a href="dosen_cpmk.html" class="btn btn-secondary">Lihat</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>JSI62122</td>
-                                    <td>Data Mining</td>
-                                    <td>3</td>
-                                    <td>4</td>
-                                    <td><a href="" class="btn btn-secondary">Lihat</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>JSI62123</td>
-                                    <td>Perancangan Basis Data</td>
-                                    <td>4</td>
-                                    <td>4</td>
-                                    <td>
-                                        <a href="" class="btn btn-secondary">Lihat</a>
-                                    </td>
-                                </tr>
                     </tbody>
                 </table>
-                </form>
-
-                
+                </form>                
             </div>
             <div class="card-footer text-muted">
                 RPS Universitas Andalas
