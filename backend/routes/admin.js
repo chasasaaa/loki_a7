@@ -5,7 +5,7 @@ const VerifyToken = require('../middleware/VerifyToken.js')
 const CekAdmin = require('../middleware/CekAdmin.js')
 
 server.get('/admin', (req, res) => {
-    res.render("loginAdmin")
+    res.render("login2")
 })
 server.post('/loginAdmin', controllers.auth.loginAdmin)
 server.get('/homeAdmin', VerifyToken, controllers.admin.home)

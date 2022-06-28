@@ -17,18 +17,16 @@
         </div>
         <h3 style="margin-left: 80px; font-family: sans-serif; color: #fff;">PORTAL DOSEN</h3>
         
-        <form class="p-3 mt-3">
+        <form class="p-3 mt-3" action="/loginDosen" method="POST">
             <div class="form-field d-flex align-items-center">
                 <span class="far fa-user"></span>
-                <input type="text" name="userName" id="userName" placeholder="Username">
+                <input type="text" name="NIP" id="exampleInputEmail1" placeholder="Username">
             </div>
             <div class="form-field d-flex align-items-center">
                 <span class="fas fa-key"></span>
-                <input type="password" name="password" id="pwd" placeholder="Password">
+                <input type="password" name="password" id="exampleInputPassword1" placeholder="Password">
             </div>
-                
-            <a href="dosen_dashbord.html"><button class="btn mt-3">Login</button></a>
-            
+                <button type="submit" class="btn mt-3">Login</button>
         </form>
     </div>
 </body>

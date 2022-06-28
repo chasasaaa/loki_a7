@@ -16,20 +16,21 @@
             <!-- <img src="https://id.images.search.yahoo.com/yhs/search;_ylt=AwrxguoFI45iQX4AMyT3RQx.;_ylu=Y29sbwMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=logo+unand&type=fc_ADDA49F0A8D_s58_g_e_d021922_n9998_c24&param1=7&param2=eJwtjEsKgzAQQK8ySwUZJzFGg8foqoiLVFMbjEbUYunpO0J37735jH5om%2B52F0RKGtVm3cJujKkZrxFJYaRk6VnkteBXJlFLVFgRivpqo4sc%2BVfWvS3THL8%2BBJuXSJCcfhniucNygCCkBjho1cBHqxTsugZ3usfkj7wsKiw0JNPrmEMGwU8ORtdPMYX%2BtcXZ5YIEEipTCtQV7PZpN%2F8%2F%2BwGW%2FDuH&hsimp=yhs-2461&hspart=fc&ei=UTF-8&fr=yhs-fc-2461#id=13&iurl=https%3A%2F%2Flp3m.unand.ac.id%2Fwebpanel%2Ftodakimage%2Flogo.png&action=click" alt=""> -->
         </div> 
         <h3 style="margin-left: 80px; font-family: sans-serif; color: #fff;">PORTAL ADMIN</h3>
-        
-        <form class="p-3 mt-3">
+        <div>
+        <form class="p-3 mt-3" action="/loginAdmin" method="POST">
             <div class="form-field d-flex align-items-center">
                 <span class="far fa-user"></span>
-                <input type="text" name="userName" id="userName" placeholder="Username">
+                <input type="text" name="NIP" id="exampleInputEmail1" placeholder="NIP">
             </div>
             <div class="form-field d-flex align-items-center">
                 <span class="fas fa-key"></span>
-                <input type="password" name="password" id="pwd" placeholder="Password">
+                <input type="password" name="password" id="exampleInputPassword1" placeholder="Password">
             </div>
-                
-            <a href="admin_halamanawal.html"><button class="btn mt-3">Login</button></a>
+                <button type="submit" class="btn mt-3">Login</button>
             
         </form>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

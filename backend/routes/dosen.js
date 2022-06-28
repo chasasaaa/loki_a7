@@ -5,13 +5,13 @@ const VerifyToken = require('../middleware/VerifyToken.js')
 const CekDosen = require('../middleware/CekDosen.js')
 
 server.get('/dosen', (req, res) => {
-    res.render("logindosen")
+    res.render("login3")
 })
 server.post('/loginDosen', controllers.auth.loginDosen)
 server.get('/dasbordDosen',VerifyToken, controllers.dosen.home)
 
 server.get('/semuaMatkul', VerifyToken, controllers.dosen.home)
-server.get('/lihatRPS', controllers.RPS.lihatRPS)
+server.get('/lihatMatkul', controllers.RPS.lihatRPS)
 server.get('/ubahRPS', CekDosen, controllers.RPS.lihatRPS)
 server.get('/tambahRPS', VerifyToken, controllers.RPS.hlmTambahRPS)
 server.post('/tambahRPS', controllers.RPS.tambahRPS)

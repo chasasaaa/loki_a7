@@ -17,7 +17,7 @@ controllers.home = async(req, res) => {
     const RPS = await models.course_plans.findAll({
         atribute : ['rev', 'code', 'name', 'credit', 'semester']
     })
-    res.render("homepageadmin", {RPS, accessToken, nama, NIP} )
+    res.render("admin_halamanawal", {RPS, accessToken, nama, NIP} )
     // res.json({RPS})
 }
 

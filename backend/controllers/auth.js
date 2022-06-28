@@ -134,7 +134,7 @@ controllers.loginDosen = async (req, res) => {
             httpOnly    : true,
             maxAge      : 24 * 60 * 60 * 1000
         })
-        res.status(200).redirect("/homeDosen")
+        res.status(200).redirect("/dasbordDosen")
     } 
     catch (err) 
     {
