@@ -1,7 +1,7 @@
 //RPS
 'use strict'
 const { Sequelize, DataTypes, err } = require('sequelize');
-const db = require('../config/database.js')
+const db = require('../config/koneksi.js')
 var course_plans = db.define('course_plans', {
     id : {
         type            : DataTypes.BIGINT,

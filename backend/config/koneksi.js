@@ -1,8 +1,8 @@
-import {Sequelize} from "sequelize";
+const sequalize = require('sequelize')
 
-const db = new Sequelize('loki', 'root', '', {
+const db = new sequalize('loki', 'root', '', {
     host    : "localhost",
     dialect : "mysql"
 })
 
-export default db;
+module.exports = db

@@ -1,41 +1,37 @@
-const models = require('../models/index')
-const controllers = {}
+//mata kuliah
+'use strict'
+const { Sequelize, DataTypes, err } = require('sequelize');
+const db = require('../config/koneksi.js')
+var courses = db.define('courses', {
+    id : {
+        type        : DataTypes.BIGINT,
+        allowNull       : false,
+        primaryKey      : true,
+        autoIncrement   : true
+    },
+    curriculum_id :  {
+        type        : DataTypes.BIGINT,
+        allowNull   : false,
+        primaryKey  : false
+    },
+    alias_name : {
+        type        : DataTypes.TEXT,
+        allowNull   : true
+    },
+    description : {
+        type        : DataTypes.TEXT,
+        allowNull   : true
+    },
+    code        : Sequelize.STRING,
+    name        : Sequelize.TEXT,
+    credit      : Sequelize.INTEGER,
+    semester    : Sequelize.INTEGER,
+    // created_at :Sequelize.DATE,
+    // updated_at : Sequelize.DATE
+},{
+    freezeTableName : true,
+    timestamps      : false
+})
 
-controllers.cekMataKuliah = async (req, res, next) => {
-    const matkul = await models.course_plans.findOne({
-        where : {
-            id : req.body.course_id
-        }
-    })
-    if (matkul)
-        return res.status(200).json("Tidak dapat menambahkan mata kuliah yang telah tersedia")
-    next()
-}
-
-controllers.tambahMatkul = async (req, res) => {
-    const matkul = await models.course_plans.findOne({
-        where : {
-            id : req.body.course_id
-        }
-    })
-    if (matkul)
-        return res.status(200).json("Tidak dapat menambahkan mata kuliah yang telah tersedia")
-    const {course_id, code, name, alias_name, credit, semester, description} = req.body
-    try {
-        await models.courses.create({
-                id              : course_id,
-                curriculum_id   : 1,
-                code            : code,
-                name            : name,
-                alias_name      : alias_name,
-                credit          : credit,
-                semester        : semester,
-                description     : description
-        })
-        res.json({msg: "Berhasil menambahkan Mata Kuliah"});
-    }catch (err) {
-        console.log(err);
-    }
-} 
-
-module.exports = controllers
+// user.removeAttribute('updatedAt', 'createdAt')
+module.exports = courses

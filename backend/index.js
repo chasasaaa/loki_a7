@@ -1,29 +1,37 @@
-import express from "express";
-import dotenv from "dotenv";
-import db from "./config/koneksi.js";
-import router from "./routes/index.js";
-dotenv.config();
-const app = express();
 
-try {
-    await db.authenticate();
-    console.log('Database Connected...');
-} catch (error) {
-    console.error(error);
-}
+const database = require('./config/koneksi.js')
+const bodyParser = require("body-parser");
+const express = require('express')
+const app = express()
+const port = 3000
+const controllers = require('./controllers/index.js')
+const server = require('./routes/index.js')
+const cookieParser = require('cookie-parser');
+require('dotenv').config()
 
-app.use(express.json());
-app.use(router);
+app.use(express.json())
+app.use(express.urlencoded({extended : true}))
+app.use(cookieParser())
 
-app.get("/", function(request, response){
-    response.send("Selamat Datang")
-})
-app.get("/home", function(request, response){
-    response.send("Halaman Beranda")
-})
-app.get("/login", function(request, response){
-    response.send("Halaman Login Pengguna")
-})
-app.listen(3000, function(){
-    console.log("Server Run")
+database.authenticate()
+  .then(() => {
+    console.log('Berhasil terhubung database');
+  })
+  .catch(err => {
+    console.error(`Gagal terhubung : ${err}`);
+  });
+
+app.set("view engine", "ejs")
+app.use(express.static("views"))
+
+app.get('/login', controllers.auth.login)
+app.delete('/logout', controllers.auth.logout)
+app.use('/', server.mhs)
+app.use('/', server.admin)
+app.use('/', server.dosen)
+app.use('/', server.user)
+
+app.listen(port, () =>
+{
+    console.log(`Server sudah berjalan di port ${port}`)
 })
