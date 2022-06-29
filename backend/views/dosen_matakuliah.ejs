@@ -14,7 +14,6 @@
     
   </head>
   <body>
-		
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
@@ -22,10 +21,10 @@
           <h6 style="margin-left: 100px; margin-top: -1cm;">Dosen</h6>
 	        <ul class="list-unstyled components mb-5">
             <li>
-              <a rel="icon" href="dosen_dashbord.html"><img src="images/icon-home.jpg" style="width:30px;height:30px;">Dashboard</a>
+              <a rel="icon" href="/dasbordDosen"><img src="images/icon-home.jpg" style="width:30px;height:30px;">Dashboard</a>
             </li>
             <li>
-              <a rel="icon" href="dosen_matakuliah.html"><img src="images/icon_course.jpg" style="width:30px;height:30px;">Mata Kuliah</a>
+              <a rel="icon" href="/semuaMatkul"><img src="images/icon_course.jpg" style="width:30px;height:30px;">Mata Kuliah</a>
             </li>
 	          <li>
               <a class="popuplogout" rel="icon" href="#popuplogout"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
@@ -50,42 +49,30 @@
             </button>
           </div>
         </nav>
-        <h2 class="mb-6">
-            Mata Kuliah
-        </h2>
-        <h3 class="mb-4">
-          Nama Dosen : xxx<br>
-          NIP        : xxx<br>
-          Semester   : xxx<br>
-        </h3>
         <table class="table" border = "1" cellpadding="10">
+          <head></head>
           <tr class="table-detail">
-                <td><b> No </b></td>
-              <td><b> Kode Matkul </b></td>
-              <td><b> Kuliah </b></td>
-              <td><b> Mata Kuliah </b></td>
-              <td><b> Detail </b></td>
+            <th class="text-center" scope="col">No.</th>
+            <th class="text-center" scope="col">Kode Mata Kuliah</th>
+            <th class="text-center" scope="col">Nama Mata Kuliah</th>
+            <th class="text-center" scope="col">Jumlah SKS</th>
+            <th class="text-center" scope="col">Detail</th>
           </tr>
-          <tr class="table-detail">
-              <td>1</td>
-              <td>JSI62121</td>
-              <td>Analisis dan Visualisasi Data</td>
-              <td>3</td>
+        </head>
+        <tbody>
+          <% RPS.forEach((R, i) => { %>
+            <tr>
+              <th class="text-center" scope="row"><%= i+1 %></th>
+              <td class="text-center"><%= R.course_plan.code %></td>
+              <td><%= R.course_plan.name %></td>
+              <td class="text-center"><%= R.course_plan.credit %></td>
               <td>
-                <a href="dosen_cpmk.html"><img src="https://icon-library.com/images/icon-detail/icon-detail-1.jpg"
-                style="width:30px;height:30px;"></a>
+                <a href="/detailCPMK/<%= R.course_plan_id %>/<%= R.course_plan.name %>"><img src="https://icon-library.com/images/icon-detail/icon-detail-1.jpg"
+                style="width:30px;height:30px;margin-left: 78px;"></a>
               </td>
-          </tr>
-          <tr class="table-detail">
-            <td>2</td>
-            <td>JSI62125</td>
-            <td>Pemograman Web</td>
-            <td>3</td>
-            <td>
-              <img src="https://icon-library.com/images/icon-detail/icon-detail-1.jpg"
-              style="width:30px;height:30px;">
-            </td>
-        </tr>
+            </tr>
+            <% i++} ) %>
+        </tbody>
       </table>
       </div>
       <! -- pop up Logout -->

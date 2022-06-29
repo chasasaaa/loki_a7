@@ -8,11 +8,13 @@
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Logo_Unand.svg/1200px-Logo_Unand.svg.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/matakuliah.css">
-  <link rel="stylesheet" href="css/popup.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/matakuliah.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="https://kit.fontawesome.com/9c1321c239.js" crossorigin="anonymous"></script>
+
   </head>
-  <body>
-		
+  <body>	
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
@@ -20,17 +22,15 @@
           <h6 style="margin-left: 100px; margin-top: -1cm;">Dosen</h6>
 	        <ul class="list-unstyled components mb-5">
             <li>
-              <a rel="icon" href="dosen_dashbord.html"><img src="images/icon-home.jpg" style="width:30px;height:30px;">Dashboard</a>
+              <a rel="icon" href="/dasbordDosen"><img src="images/icon-home.jpg" style="width:30px;height:30px;">Dashboard</a>
             </li>
             <li>
-              <a rel="icon" href="dosen_matakuliah.html"><img src="images/icon_course.jpg" style="width:30px;height:30px;">Mata Kuliah</a>
+              <a rel="icon" href="/semuaMatkul"><img src="images/icon_course.jpg" style="width:30px;height:30px;">Mata Kuliah</a>
             </li>
 	        <li>
               <a class="popuplogout" rel="icon" href="#popuplogout"><img src="images/icon_logout.jpg" style="width:30px;height:30px;">Logout</a>
 	        </li>
 	        </ul>
-
-	       
     	</nav>
 
         <!-- Page Content  -->
@@ -64,34 +64,27 @@
             </div>
           </div>
         </nav>
-        <h2 class="mb-6">
-            CPMK<br>
-        </h2>
-            <h3 class="mb-4">
-                Kode Matkul    : JSI62121<br>
-                Nama Matkul    : Analisis dan Visualisasi Data<br>
-                Dosen Pengampu : Ricky Akbar, M. Kom.<br>
-                Jumlah SKS     : 3<br>
-            </h3>
             <table border ="1" cellpadding="10" width="90%">
-                <tr class="table-detail">
-                    <td><b> CPMK </b></td>
-                    <td width="100px"><b> Aksi </b></td>
+              <thead>
+                <tr>
+                  <th class="text-center" scope="col">No.</th>
+                  <th class="text-center" scope="col">Capaian Mata Kuliah</th>
+                  <th class="text-center" scope="col">Edit</th>
+                  <th class="text-center" scope="col">Hapus</th>
                 </tr>
-                <tr class="table-detail-cpmk">
-                    <td>Mahasiswa mampu menjelaskan konsep visualisasi data</td>
+              </thead>
+              <tbody>
+                <% CPMK.forEach((C, i) => { %>
+                  <tr>
+                    <td class="text-center" scope="row"><%= i+1 %></td>
+                    <td><%= C.name %></td>
                     <td class="table-detail">
-                        <a class="popupedit" rel="icon" href="#popupedit"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                        <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
-                    </td>
-                </tr>
-                <tr class="table-detail-cpmk">
-                    <td>Mahasiswa mampu membuat visualisasi data menggunakan bahasa pemograman python</td>
-                    <td class="table-detail">
-                        <a class="popupedit" rel="icon" href="#popupedit"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
-                        <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
-                    </td>
-              </tr>
+                      <a class="popupedit" rel="icon" href="#popupedit"><img src="images/icon-edit.jpg" style="width:30px;height:30px;"></a>
+                      <a class="popuphapus" rel="icon" href="#popuphapus"><img src="images/icon-delete.jpg" style="width:35px;height:35px;"></a>
+                  </td>
+                  </tr>
+                  <% } ) %>
+              </tbody>
             </table>
             <td>
               <a class="popuptambah" rel="icon" href="#popuptambah"><img src="images/icon-tambah.jpg" style="width:30px;height:30px;margin-top: 2%;margin-left: 85%;"></a>
@@ -159,7 +152,7 @@
       </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

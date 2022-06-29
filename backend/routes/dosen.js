@@ -10,7 +10,7 @@ server.get('/dosen', (req, res) => {
 server.post('/loginDosen', controllers.auth.loginDosen)
 server.get('/dasbordDosen',VerifyToken, controllers.dosen.home)
 
-server.get('/semuaMatkul', VerifyToken, controllers.dosen.home)
+server.get('/semuaMatkul', VerifyToken, controllers.dosen.matkul)
 server.get('/lihatMatkul', controllers.RPS.lihatRPS)
 server.get('/ubahRPS', CekDosen, controllers.RPS.lihatRPS)
 server.get('/tambahRPS', VerifyToken, controllers.RPS.hlmTambahRPS)

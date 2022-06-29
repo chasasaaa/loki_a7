@@ -18,7 +18,7 @@ controllers.detailCPMK = async (req, res) => {
             course_plan_id : req.params.id
         }
     })
-    res.render("CPMK1", {CPMK, name, id, nama, NIP})
+    res.render("dosen_cpmk", {CPMK, name, id, nama, NIP})
 }
 
 controllers.hlmTambahCPMK = async (req, res) => {
